@@ -13,6 +13,15 @@ public class CreatingThreads {
 		public void run() {
 			long id = Thread.currentThread().getId();
 			System.out.println(id+"  Hello " + country + "!");
+			
+			
+			
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				
+			}
+			
 		}
 	}
 
